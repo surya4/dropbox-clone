@@ -1,4 +1,4 @@
-## Basic Uber Clone using Node, Kafka, GoogleMap and Cassandra
+## Basic DropBox Clone using Node and Sockets
 
 ### Configuration
 - **Platform:** node
@@ -8,6 +8,6 @@
 - **CSS Preprocessor**: css
 - **Build Tool**: none
 - **Unit Testing**: mocha
-- **Database**: cassandra
+- **Database**: 
 - **ORM**: 
 - **Deployment**: aws
