@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 
 // controllers
-let riderController = require('../controllers/rider');
+let laterController = require('../controllers/later');
 // let userController = require('../mongoControllers/user');
 // let contactController = require('../mongoControllers/contact');
 
@@ -11,18 +11,18 @@ let riderController = require('../controllers/rider');
 
 router.get('/', (req, res, next) => {
   console.log("hello1")
-  riderController.initializeMap()
-  .then((response) => {
-    console.log("1sds", response[0].geometry.location)
+  // laterController.initializeMap()
+  // .then((response) => {
+  //   console.log("1sds", response[0].geometry.location)
     res.render('index', {
-      'title': 'Uber Clone',
+      'title': 'DropBox Clone',
       // 'location' : response[0].geometry.location
   });
-  return;
-  })
-  .catch((err) => {
-    return err;
-  })
+  // return;
+  // })
+  // .catch((err) => {
+  //   return err;
+  // })
 });
 
 

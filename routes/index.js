@@ -14,5 +14,11 @@ let router = express.Router();
 // router.put('/profile', userController.ensureAuthenticated, userController.profilePut);
 // router.delete('/profile', userController.ensureAuthenticated, userController.profileDelete);
 
+router.get('/', (req, res, next) => {
+    res.render('index', {
+      'title': 'DropBox Clone',
+  });
+});
+
 
 module.exports = router;

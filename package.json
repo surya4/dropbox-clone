@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "DEBUG=uber-clone node ./bin/www",
+        "start": "DEBUG=dropbox-clone node ./bin/www",
         "local": "node ./bin/www"
     },
     "dependencies": {

@@ -15,8 +15,8 @@ const dotenv = require('dotenv');
 dotenv.load();
 
 // Routers
-let rider = require('./routes/rider');
-let driver = require('./routes/driver');
+let index = require('./routes/index');
+let later = require('./routes/later');
 // let driver = require('./routes/driver');
 
 // require('./src/mongoControllers/passport');
@@ -51,8 +51,8 @@ app.use(flash());
 app.use(express.static(path.join(__dirname, './public')));
 
 // app.use('/rider', rider);
-app.use('/', rider);
-app.use('/driver', driver);
+app.use('/', index);
+app.use('/later', later);
 // app.get('/', function(req, res) {
 //     // console.log("hello", __dirname + '/views/pages/abra.html');
 //     // res.render(__dirname + '/views/pages/abra.html');
